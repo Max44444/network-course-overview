@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Network Presentation</title>
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" media="all" href="static/css/webslides.css" />
+  <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css" />
+
+  <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png" />
+  <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png" />
+  <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png" />
+  <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png" />
+  <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png" />
+  <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png" />
+  <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#333333" />
+</head>
+
+<body>
+  <header role="banner">
+    <nav role="navigation">
+      <p class="logo"><a target="_parent" href="#slide=2" title="WebSlides"></a></p>
+      <ul>
+        <li class="github">
+          <a target="_blank" rel="external" href="https://github.com/Max44444" title="Github">
+            <svg class="fa-github">
+              <use xlink:href="#fa-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="linkedin">
+          <a target="_blank" rel="external" href="https://www.linkedin.com/in/maxim-skorokhodov-64021b20a/" title="Linkedin">
+            <svg class="fa-linkedin">
+              <use xlink:href="#fa-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="vertical">
+      <section  id="slide=1" class="slide current preview-slide">
+        <span class="background" style="background-image: url('/static//images/preview.jpg');"></span>
+        
+        <div class="wrap aligncenter">
+          <h1><strong>Networking</strong></h1>
+          <h2><strong>Course overview. Part 2</strong></h2>
+          <p>
+            <a href="https://webslides.tv/webslides-latest.zip" class="button ghost">
+              <svg class="fa-cloud-download">
+                <use xlink:href="#fa-cloud-download"></use>
+              </svg>
+              Go to the first part
+            </a>
+          </p>
+        </div>
+
+      </section>
+
+      <section id="slide=2" class="slide current">
+        <div class="wrap size-50">
+          <h3>Content</h3>
+          <p>Here you can see content of course overview</p>
+          <hr>
+          <ol class="text-cols">
+            <li><a target="_parent" href="#slide=3">Loginng and Monitoring</a></li>
+            <li><a target="_parent" href="#slide=4">Cisco devices</a></li>
+            <li><a target="_parent" href="#slide=5">Security</a></li>
+            <li><a target="_parent" href="#slide=6">Hacking</a></li>
+            <li><a target="_parent" href="#slide=7">Access control list</a></li>
+            <li><a target="_parent" href="#slide=8">Network address translation</a></li>
+            <li><a target="_parent" href="#slide=9">Quality of service</a></li>
+            <li><a target="_parent" href="#slide=10">Open shortest path first</a></li>
+            <li><a target="_parent" href="#slide=11">IPv6</a></li>
+            <li><a target="_parent" href="#slide=12">Virtual private network</a></li>
+            <li><a target="_parent" href="#slide=13">Wi-Fi</a></li>
+            <li><a target="_parent" href="#slide=14">REST APIs</a></li>
+            <li><a target="_parent" href="#slide=15">Network Automation</a></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="slide=3" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h2>Loginng and Monitoring</h2>
+          <hr>
+          <div class="grid vertical-align">
+            <div class="column" style="text-align: left;">
+              <h4>What is syslog?</h4>
+              <br>
+              <p>
+                Syslog is a standard network-based logging protocol that works on an extremely wide variety of different types of devices and applications, allowing them to send free text-formatted log messages to a central server
+              </p>
+              <a target="_blank" href="https://datatracker.ietf.org/doc/html/rfc5424">Syslog documentation</a>
+            </div>
+            <div class="column">
+              <pre>
+                <img src="/static/images/Log-Management.png" alt="">
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide=4" class="slide current">
+        <div class="wrap size-70">
+          <h3>Kiwi syslog server</h3>
+          <p>Syslog servers are used to collect syslog messages in a single location. <a target="_blank" href="https://www.solarwinds.com/kiwi-syslog-server">Download link</a></p>
+          <hr>
+          <ul class="flexblock features">
+            <li>
+              <div class="feature-item">
+                <div>
+                  <img src="/static/images/favicons/centralized.png" alt="">
+                  <div>Centrally manage syslog messages and SNMP traps</div>
+                </div>
+                <p>Manage syslog messages and SNMP traps from network devices, Linux, UNIX and Windows systems from single console</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="feature-item">
+                <div>
+                  <img src="/static/images/favicons/alert.png" alt="">
+                  <div>Recive real-time alerts based on syslog messages</div>
+                </div>
+                <p>Create intelligent alerts based on syslog messages content, message volume, metadate and custom conditions</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-item">
+                <div>
+                  <img src="/static/images/favicons/respond.png" alt="">
+                  <div>Automatically respond to syslog messages</div>
+                </div>
+                <p>Trigger email alerts, run scripts, log to file or ODBC database, forward messages and more.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-item">
+                <div>
+                  <img src="/static/images/favicons/store.png" alt="">
+                  <div>Store and archive logs for regulatory compliance</div>
+                </div>
+                <p>Schedule automated log archival and clean-up to help you comly with SOX, PCI, DSS etc.</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-item">
+                <div>
+                  <img src="/static/images/favicons/report.png" alt="">
+                  <div>Schedul the generation of syslog reports via email</div>
+                </div>
+                <p>View graphs of syslog statistics over specific time periods</p>
+              </div>
+            </li>
+            <li>
+              <div class="feature-item">
+                <div>
+                  <img src="/static/images/favicons/monitoring.png" alt="">
+                  <div>Monitor and manage logs from web console</div>
+                </div>
+                <p>Filter and monitor log messages on intuitive web console with multiple custom views.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="slide=5" class="slide current">
+        <div class="wrap size-80 aligncenter">
+          <h1>Cisco devices</h1>
+          <hr>
+          <div class="grid vertical-align">
+            <div class="column alignleft" style="text-align: left;">
+              <p>
+                <a href="https://www.cisco.com/c/en/us/index.html">Cisco</a> system Inc. is the worldwide leader in networking for the Internet.
+              </p>
+              <p>
+                Cisco delivers a comprehensive portfolio of <a target="_blank" href="https://www.cisco.com/c/en/us/products/index.html">devices</a> for Enterprise Networks, data centers, and smaller businesses. These solutions are optimized for a wide range of industries, including service providers, financial services, and the public sector.
+              </p>
+            </div>
+            <div class="column">
+              <img src="/static/images/logos/cisco.svg" alt="" class="blacklogo" style="max-width: 400px;">
+            </div>
+          </div>
+ 
+      </section>
+
+      <section id="slide=6" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h2>Security</h2>
+          <p class="text-intro">
+            <a target="_blank" href="https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html" title="Cybersecurity">
+              Cybersecurity
+            </a>, 
+            <a target="_blank" href="https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4000/8-2glx/configuration/guide/sec_port.html#wp1019819" title="Landings">
+              port security
+            </a>,
+            <a target="_blank" href="demos/portfolios.html" title="Portfolios">portfolios</a>,
+            <a target="_blank" href="https://www.cisco.com/c/en/us/td/docs/routers/nfvis/command/b-nfvis-command-ref/b-nfvis-command-ref_chapter_010000.pdf">banners</a>
+            and
+            <a href="https://www.cisco.com/c/en/us/support/docs/security-vpn/secure-shell-ssh/4145-ssh.html" title="Longforms">configure SSH</a>.
+          </p>
+          <div class="bg-white">
+            <ul class="flexblock reasons">
+              <li>
+                <h2>Setup secret password</h2>
+                <p>Setup secret password for each layer of each device of the network</p>
+              </li>
+              <li>
+                <h2>Disable Services</h2>
+                <p>Cisco allows you to disable those services that are vulnerable to a hacker attack</p>
+              </li>
+              <li>
+                <h2>Disable CDP</h2>
+                <p>Also cisco allows to disable CDP? which allows the detection of Cisco network equipment, its name, IOS version and IP address connected</p>
+              </li>
+              <li>
+                <h2>Setup SSH</h2>
+                <p>Setup secure  shell protocol - cryptographic network protocol for operation network services securely over an unsecured network</p>
+              </li>
+              <li>
+                <h2>Banners</h2>
+                <p>Setup banner with receive messages if a user connects to the network</p>
+              </li>
+            </ul>
+          </div>
+      </section>
+
+      <section id="slide=7" class="slide current bg-apple">
+        <div class="wrap size-70">
+          <div class="content-left">
+            <h2>Hacking</h2>
+            <br><br>
+            <p>
+              <a target="_blank" href="https://www.wireshark.org/"><strong>Wireshark</strong></a> is the world’s foremost and widely-used network protocol analyzer.
+            </p>
+            <p>
+              <a target="_blank" href="https://www.kali.org/"><strong>Kali Linux</strong></a> is an open-source, Debian-based Linux distribution aimed at advanced Penetration Testing and Security Auditing.
+            </p>
+          </div>
+          <div class="content-left">
+            <div class="embed">
+              <div data-youtube data-youtube-id="sxaHtjJfAzg"></div>
+            </div>
+            <br>
+            <div class="embed">
+              <div data-youtube data-youtube-id="AnwgxRtWXLI"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide=8" class="slide current">
+        <div class="wrap size-70">
+          <div class="content-left">
+            <h2>Access Control Lists</h2>
+            <br><br>
+            <p>
+              <a target="_blank" href="https://cloud.google.com/storage/docs/access-control/lists">ACLs</a> contains metadata that specifies who is allowed to view and modify a document. Each item in a repository has an associated ACL that is updated whenever a user changes the permissions applied to the item.
+            </p>
+          </div>
+          <div class="content-left">
+            <div class="embed">
+              <div data-youtube data-youtube-id="6Yj1-pZmHvY"></div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide=9" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h2>Network address translation</h2>
+          <hr>
+          <p><a target="_blank" href="https://www.cisco.com/c/en/us/support/docs/ip/network-address-translation-nat/26704-nat-faq-00.html">Network address translation (NAT)</a> is designed for IP address conservation. It enables private IP networks that use unregistered IP addresses to connect to the Internet. NAT operates on a router, usually connecting two networks together, and translates the private (not globally unique) addresses in the internal network into legal addresses, before packets are forwarded to another network.</p>
+        </div>
+      </section>
+
+      <section id="slide=10" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h2>Quality of service</h2>
+          <hr>
+          <p>
+            <a target="_blank" href="https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/QoS_SRND/QoS-SRND-Book/QoSIntro.html#:~:text=Cisco%20provides%20a%20complete%20toolset,networked%20applications%20and%20traffic%20types.">Quality of Service (QoS)</a> is a set of technologies that work on a network to guarantee its ability to dependably run high-priority applications and traffic under limited network capacity. QoS technologies accomplish this by providing differentiated handling and capacity allocation to specific flows in network traffic. This enables the network administrator to assign the order in which packets are handled, and the amount of bandwidth afforded to that application or traffic flow
+          </p>
+        </div>
+      </section>
+
+      <section id="slide=11" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h3>Open shortest path first</h3>
+          <hr>
+          <p>
+            The <a target="_blank" href="https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/7039-1.html">Open Shortest Path First (OSPF)</a> protocol, defined in <a href="https://www.ietf.org/rfc/rfc2328.txt">RFC 2328</a>, is an Interior Gateway Protocol used to distribute routing information within a single Autonomous System. This paper examines how OSPF works and how it can be used to design and build large and complicated networks.
+          </p>
+        </div>
+      </section>
+
+      <section id="slide=12" class="slide current">
+        <div class="wrap size-70 aligncenter">
+          <h2>IPv6</h2>
+          <p><a target="_blank" href="https://www.cisco.com/c/en/us/solutions/ipv6/overview.html">Internet Protocol version 6</a></p>
+          <ul class="flexblock clients">
+            <li>
+              <figure>
+                <figcaption>
+                  <h2>380 &times; 10<sup>36</sup> addresses</h2>
+                  <p>IPv6 uses 128-bit addresses as opposed to the 32-bit addresses used by IPv4, allowing for a substantially larger number of possible addresses.</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>
+                  <h3>More efficient routing</h3>
+                  <p>IPv6 has a more efficient routing, which allows the whole queue to avoid package fragmentation</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>
+                  <h3>Quality of Service</h3>
+                  <p>Built-in Quality of Service (QoS) technology that defines delay sensitive packages</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>
+                  <h3>No NAT</h3>
+                  <p>Removing NAT allowed the address space to be extended from 32 bits to 128 bits</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>
+                  <h3>IPsec</h3>
+                  <p>IPv6 has IPsecurity support (IPsec application optional)</p>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <figcaption>
+                  <h3>Improved header</h3>
+                  <p>IPv6 has improved header structure which reducing procession costs</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="slide=13" class="slide current">
+        <div class="wrap size-70 aligncenter">
+          <h2>Virtual private network</h2>
+          <hr>
+          <div class="content-left" style="text-align: left;">
+            <h4>What is VPN?</h4>
+            <p>
+              A <a target="_blank" href="https://docs.aws.amazon.com/vpn/?id=docs_gateway">VPN</a> or Virtual private network is a tecnology which gives you online privacy and anonymity by creating a private network from a public internet connection. VPNs mask your internet protocol (IP) address so your online actions are virtually untraceable. Most important, VPN services establish secure and encrypted connections to provide greater privacy than even a secured Wi-Fi hotspot.
+            </p>
+          </div>
+          <div class="content-left">
+            <div class="embed">
+              <div data-youtube data-youtube-id="xGjGQ24cXAY"></div>
+            </div>
+            <br>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide=14" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h2>Wi-Fi</h2>
+          <p><a href="https://www.cisco.com/c/en/us/products/wireless/what-is-wifi.html">Wi-Fi</a> is a wireless technology used to connect computers, tablets, smartphones and other devices to the internet.</p>
+          <hr>
+          <div class="embed">
+            <div data-youtube data-youtube-id="hePLDVbULZc"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="slide=15" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h3><a href="https://www.redhat.com/en/topics/api/what-is-a-rest-api">REST APIs</a></h3>
+          <h4 style="text-align: left;">Main criteria:</h4>
+          <ul class="flexblock clients">
+            <li>
+              <div>
+                <h3>Client-Server</h3>
+                <p>The system should be split into clients and servers.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Stateless</h3>
+                <p>The server should not store any client information.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Cache</h3>
+                <p>Each answer must be noted whether it is cached or not.</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <h3>Uniform Interface</h3>
+                <p>Single interface defines the interface between clients and servers.</p>
+              </div>
+            </li>
+          </ul>
+          <h4 style="text-align: left;">Main principles:</h4>
+          <ul class="flexblock features">
+            <li>
+              <h3><a target="_blank" href="https://www.oreilly.com/library/view/restful-web-services/9780596809140/ch02.html">Identification of resources</a></h3>
+            </li>
+            <li>
+              <h3><a target="_blank" href="https://www.oreilly.com/library/view/building-restful-web/9781787127746/12128f4f-9297-467b-b0c0-bd764c497073.xhtml#:~:text=This%20constraint%20states%20that%20the,the%20HTTP%20method%20and%20URI.">Manipulation of resources through representations</a></h3>
+            </li>
+            <li>
+              <h3><a target="_blank" href="https://www.oreilly.com/library/view/hands-on-restful-api/9781788992664/0cc9deb6-077e-4a48-b1a6-b527c6a157cf.xhtml">Self-descriptive messages</a></h3>
+            </li>
+            <li>
+              <h3><a target="_blank" href="https://dzone.com/articles/rest-api-what-is-hateoas">HATEOAS</a></h3>
+            </li>
+            <li>
+              <h3><a target="_blank" href="https://www.oreilly.com/library/view/hands-on-restful-api/9781788992664/f9b0ba0e-dce9-47c8-b994-7c0153d2a18e.xhtml">Layered System</a></h3>
+            </li>
+            <li>
+              <h3><a target="_blank" href="https://www.oreilly.com/library/view/building-restful-web/9781787127746/c404b567-86d7-496a-af50-e0f44277d639.xhtml">Code-On-Demand</a></h3>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="slide=16" class="slide current">
+        <div class="wrap size-50 aligncenter">
+          <h2>Network Automation</h2>
+          <p><a href="https://www.cisco.com/c/en/us/solutions/automation/network-automation.html">Network automation</a> is the process of automating the configuring, managing, testing, deploying, and operating of physical and virtual devices within a network.</p>
+          <hr>
+          <div class="embed">
+            <div data-youtube data-youtube-id="gbwp6xkYRvs"></div>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <script src="static/js/webslides.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <script defer src="static/js/svg-icons.js"></script>
+</body>
+
+</html>

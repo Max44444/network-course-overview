@@ -1,0 +1,21 @@
+.preview-slide {
+  color: white;
+  background-color: #333;
+}
+
+.feature-item div {
+  display: flex;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.feature-item div img {
+  margin-right: 1.2rem;
+  width: 64px;
+  height: 64px;
+}
+
+.feature-item p {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
